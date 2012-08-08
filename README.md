@@ -4,12 +4,13 @@ Math Evaluator
 This class is used to evaluate infix expressions safely.
 
 Currently the class supports the following operations:
-Addition (+)
-Subtraction (-)
-Multiplication (*)
-Division (/)
-Power (^)
-Modulus (%)
+
+ - Addition (+)
+ - Subtraction (-)
+ - Multiplication (*)
+ - Division (/)
+ - Power (^)
+ - Modulus (%)
 
 Quick Example:
 
