@@ -1,10 +1,16 @@
 <?php
 
 /**
- * Test_MathEvaluator class tests
+ * Math Evaluator: Evaluate maths expressions without using eval()
  *
+ * @package    Math Evaluator
+ * @version    v0.1
+ * @author     Matthew McConnell
+ * @license    MIT License
+ * @link       https://github.com/maca134/fuel-mathevaluator
  * @group MathEvaluator
  */
+
 class Test_MathEvaluator extends \Fuel\Core\TestCase {
 
     protected function setUp() {
@@ -50,7 +56,7 @@ class Test_MathEvaluator extends \Fuel\Core\TestCase {
      */
     public function testSubtraction($input, $expected) {
         $e = \MathEvaluator::e($input);
-        $this->assertEquals($expected, $e, $input);
+        $this->assertEquals($expected, $e);
     }
 
     public function dataProviderSubtraction() {
@@ -59,7 +65,7 @@ class Test_MathEvaluator extends \Fuel\Core\TestCase {
             array('1 - 2 - 3 - 4 - 5', '-13'),
             array('100 - 200', '-100'),
             array('2 - 3 - (5 - 5)', '-1'),
-            array('10 - 32 - 10', '-32'),
+            array('10 - (32 - (5 + 5))', '-12'),
         );
     }
 
@@ -68,7 +74,7 @@ class Test_MathEvaluator extends \Fuel\Core\TestCase {
      */
     public function testMultiply($input, $expected) {
         $e = \MathEvaluator::e($input);
-        $this->assertEquals($expected, $e, $input);
+        $this->assertEquals($expected, $e);
     }
 
     public function dataProviderMultiply() {
@@ -87,7 +93,7 @@ class Test_MathEvaluator extends \Fuel\Core\TestCase {
      */
     public function testDivide($input, $expected) {
         $e = \MathEvaluator::e($input);
-        $this->assertEquals($expected, round($e, 4), $input);
+        $this->assertEquals($expected, round($e, 4));
     }
 
     public function dataProviderDivide() {
@@ -104,7 +110,7 @@ class Test_MathEvaluator extends \Fuel\Core\TestCase {
      */
     public function testModulus($input, $expected) {
         $e = \MathEvaluator::e($input);
-        $this->assertEquals($expected, round($e, 4), $input);
+        $this->assertEquals($expected, round($e, 4));
     }
 
     public function dataProviderModulus() {
@@ -129,7 +135,7 @@ class Test_MathEvaluator extends \Fuel\Core\TestCase {
 
         foreach ($tests as $input => $expected) {
             $e = \MathEvaluator::e($input);
-            $this->assertEquals($expected, round($e, 4), $input);
+            $this->assertEquals($expected, round($e, 4));
         }
     }
 

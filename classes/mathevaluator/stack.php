@@ -1,12 +1,13 @@
 <?php
 
 /**
- * This class is used to evaluate infix expressions safetly
- * 
- * @package		MathEvaluator
- * @author		Matthew McConnell <maca134@googlemail.com>
- * @version		0.1
- * @link		http://maca134.co.uk
+ * Math Evaluator: Evaluate maths expressions without using eval()
+ *
+ * @package    Math Evaluator
+ * @version    v0.1
+ * @author     Matthew McConnell
+ * @license    MIT License
+ * @link       https://github.com/maca134/fuel-mathevaluator
  */
 
 namespace MathEvaluator;

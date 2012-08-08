@@ -1,15 +1,15 @@
 <?php
 
 /**
- * A package for safely evaluating mathamatical expressions
+ * Math Evaluator: Evaluate maths expressions without using eval()
  *
- * @package    NotORM
- * @version    0.1
+ * @package    Math Evaluator
+ * @version    v0.1
  * @author     Matthew McConnell
  * @license    MIT License
- * @copyright  2012 Matthew McConnell
- * @link       http://maca134.co.uk
+ * @link       https://github.com/maca134/fuel-mathevaluator
  */
+
 Autoloader::add_core_namespace('MathEvaluator');
 
 Autoloader::add_classes(array(

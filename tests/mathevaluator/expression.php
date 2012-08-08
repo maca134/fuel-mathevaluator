@@ -1,10 +1,16 @@
 <?php
 
 /**
- * Test_MathEvaluator_Stack class tests
+ * Math Evaluator: Evaluate maths expressions without using eval()
  *
+ * @package    Math Evaluator
+ * @version    v0.1
+ * @author     Matthew McConnell
+ * @license    MIT License
+ * @link       https://github.com/maca134/fuel-mathevaluator
  * @group MathEvaluator
  */
+
 class Test_MathEvaluator_Parse extends Fuel\Core\TestCase {
 
     protected static function getMethod($name) {
